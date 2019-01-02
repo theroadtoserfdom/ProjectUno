@@ -51,7 +51,7 @@ Open Jupyter Notebook
 
 Check Tensorflow Version
 - import tensorflow as tf
-  tf.'__'version'__'
+  {tf.__version__}
   
 To Execute code
 - Ctrl + Enter 
