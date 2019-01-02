@@ -36,6 +36,35 @@ To Check Python Dependency Versions
 - python --version 
 - jupyter notebook --version
 
+To Install Python Dependencies
+- conda install -c conda-forge tensorflow 
+- pip install keras 
+- pip install matplotlib
+
+To Enable our Virtual Environment within Jupyter Notebook
+- pip install ipykernel
+- python -m ipkernel install --user --name=ProjectUno
+
+Open Jupyter Notebook
+- Jupyter Notebook
+- Select New\ProjectUno
+
+Check Tensorflow Version
+- import tensorflow as tf
+  tf.__version__
+  
+To Execute code
+- Ctrl + Enter 
+
+To Enter New Cell 
+- Shift + Enter 
+
+Congratulations! You have now set up your Deep Learning Environment!
+
+
+ 
+
+
 
 
 
