@@ -9,7 +9,7 @@ After completing this project you will be able to:
 1. Navigate virtual environments in Anaconda 
 2. Enable environments in Jupyter Notebook 
 3. Install dependencies for Tensorflow and Keras
-4. Execute and Troubleshooting code with Tensorflow and Keras libraries
+4. Execute and Troubleshoot code with Tensorflow and Keras libraries
 
 Before we begin:
 - Uninstall any other versions of Python installed on the Windows Machine
