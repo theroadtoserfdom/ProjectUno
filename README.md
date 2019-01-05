@@ -103,9 +103,8 @@ Now that we have our Model Architecture Built, we will begin our Training Archit
 - model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))  # this is our hidden layer using rectified linear activation function
 - model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))  # 128 is the number of neurons 
 - model.add(tf.keras.layers.Dense(10, activation=tf.nn.softmax))  # 10 is the number of classifications , Softmax = Probability
-- model.compile(optimizer='adam',                                 # 
--              loss='sparse_categorical_crossentropy',            #
--              metrics=['accuracy'])                              # These are the most basic criteria for compiling a model
+- model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+- # These are the most basic criteria for compiling a model
 
 
 
