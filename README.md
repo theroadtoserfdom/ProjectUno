@@ -99,7 +99,7 @@ Now that we have our Model Architecture Built, we will begin our Training Archit
 
 To Begin Training
 - model.fit(x_train, y_train, epochs=3)  
-- # "An epoch is a measure of the number of times all of the training vectors are used once to update the weights."
+- "An epoch is a measure of the number of times all of the training vectors are used once to update the weights."
 - https://nl.mathworks.com/matlabcentral/answers/62668-what-is-epoch-in-neural-network
 - Using Jupyter Notebook: Ctrl + Enter will execute our code 
 
