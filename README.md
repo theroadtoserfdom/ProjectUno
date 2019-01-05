@@ -1,7 +1,7 @@
 # ProjectUno
 Windows 10 - Anaconda, Jupyter Notebook, Tensorflow, Keras 
 
-Course Objective:
+# Course Objective:
 This project aims to take you from a complete beginner to building your first deep learning application. 
 
 After completing this project you will be able to: 
