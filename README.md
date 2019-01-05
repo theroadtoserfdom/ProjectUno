@@ -82,6 +82,35 @@ We will begin to Normalize our dataset using Keras: Adding to our code from abov
 
 Normalizing our data allows our pixel data to be displayed between 0-1 instead of 0-255. This allows our network to process our data much faster.
 
+Below we will begin to build our model using keras 
+- mnist = tf.keras.datasets.mnist  # 28x28 images of hand-written digits 0-9
+- (x_train, y_train), (x_test, y_test) = mnist.load_data()
+- x_train = tf.keras.utils.normalize(x_train, axis=1)
+- x_test = tf.keras.utils.normalize(x_test, axis=1) # Be sure to Ctrl + Enter at every cell to commit code 
+- model = tf.keras.models.Sequential()
+- model.add(tf.keras.layers.Flatten())  # this is our import layer 
+- model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))  # this is our hidden layer using rectified linear activation function
+- model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))  # 128 is the number of neurons 
+- model.add(tf.keras.layers.Dense(10, activation=tf.nn.softmax))  # 10 is the number of classifications , Softmax = Probability 
+
+Now that we have our Model Architecture Built, we will begin our Training Architecture 
+- mnist = tf.keras.datasets.mnist  # 28x28 images of hand-written digits 0-9
+- (x_train, y_train), (x_test, y_test) = mnist.load_data()
+- x_train = tf.keras.utils.normalize(x_train, axis=1)
+- x_test = tf.keras.utils.normalize(x_test, axis=1) # Be sure to Ctrl + Enter at every cell to commit code 
+- model = tf.keras.models.Sequential()
+- model.add(tf.keras.layers.Flatten())  # this is our import layer 
+- model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))  # this is our hidden layer using rectified linear activation function
+- model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))  # 128 is the number of neurons 
+- model.add(tf.keras.layers.Dense(10, activation=tf.nn.softmax))  # 10 is the number of classifications , Softmax = Probability
+- model.compile(optimizer='adam',                                 # 
+-              loss='sparse_categorical_crossentropy',            #
+-              metrics=['accuracy'])                              # These are the most basic criteria for compiling a model
+
+
+
+
+
 
 
 
