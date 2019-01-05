@@ -80,7 +80,7 @@ We will begin to Normalize our dataset using Keras: Adding to our code from abov
 - x_train = tf.keras.utils.normalize(x_train, axis=1)
 - x_test = tf.keras.utils.normalize(x_test, axis=1) # Be sure to Ctrl + Enter at every cell to commit code 
 
-Normalizing our data allows our pixel data to be displayed between 0-1 instead of 0-255. This allows our network to process our data much faster.
+# Normalizing our data allows our pixel data to be displayed between 0-1 instead of 0-255. This allows our network to process our data much faster.
 
 Below we will begin to build our model using keras 
 - mnist = tf.keras.datasets.mnist  # 28x28 images of hand-written digits 0-9
