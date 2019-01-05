@@ -98,15 +98,37 @@ Now that we have our Model Architecture Built, we will begin our Training Archit
 - These are the most basic criteria for compiling a model
 
 To Begin Training
-- model.fit(x_train, y_train, epochs=3)  
+- model.fit(x_train, y_train, epochs=3)
+- loss: .2571 - acc: .9261 , loss: .1045 - acc: .9680 , loss: .0718 - acc: .9776
 - "An epoch is a measure of the number of times all of the training vectors are used once to update the weights."
 - https://nl.mathworks.com/matlabcentral/answers/62668-what-is-epoch-in-neural-network
 - Using Jupyter Notebook: Ctrl + Enter will execute our code 
 
 
+Below we will be evaluating whether our Model Generalized or Overfit during our training process
+- Insert Cell Below
+- val_loss, val_acc = model.evaluate(x_test, y_test)
+- print(val_loss, val_acc)  # val_loss = 0.09259393468787894 , val_acc = 0.9718 
+- test values should always be lower than the training data 
+- Be aware of deltas between the training in test results  
 
+Saving Models 
+- model.save('ProjectUno.model')
 
+Loading Models
+- new_model = tf.keras.models.load_model('ProjectUno.model')
 
+Predicitions
+- predictions = new_model.predict([x_test])
+- print(predictions)  # one hot arrays / Probability Distributions 
+
+We will be importing numpy to display our predictions
+- import numpy as np
+- print(np.argmax(predictions[0])) = 7
+
+Now let's see if our Model's Prediction is accurate 
+- plt.imshow(x_test[0])
+- plt.show()
 
 
 
