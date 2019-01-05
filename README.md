@@ -4,23 +4,23 @@ Windows 10 - Anaconda, Jupyter Notebook, Tensorflow, Keras
 # Course Objective:
 This project aims to take you from a complete beginner to building your first deep learning application. 
 
-After completing this project you will be able to: 
+# After completing this project you will be able to: 
 
 1. Navigate virtual environments in Anaconda 
 2. Enable environments in Jupyter Notebook 
 3. Install dependencies for Tensorflow and Keras
 4. Execute and Troubleshoot code with Tensorflow and Keras libraries
 
-Before we begin:
+# Before we begin:
 - Uninstall any other versions of Python installed on the Windows Machine
 - Download the latest Anaconda Installer from https://www.anaconda.com/download/
   - Be sure to select the proper bit installer (E.g. x64 64-Bit or x86 32-Bit) 
   - I chose to NOT add Anaconda to my PATH environment variable (this gives Python access to our CMD terminal via the Python Command)
   
-Exclaimer: At the making of this tutorial Tensorflow only supports Python 3.6  
+# Exclaimer: At the making of this tutorial Tensorflow only supports Python 3.6  
 (I.e. no need to worry about the Python Version (ex. 3.6) this can be specified within our Virtual Environments)
 
-Once you have Anaconda Installed: Let's set up our Virtual Environment & Install our Dependencies
+# Once you have Anaconda Installed: Let's set up our Virtual Environment & Install our Dependencies
 
 To Create Virtual Environments within Anaconda: 
 - conda create -n ProjectUno python=3.6
@@ -59,7 +59,7 @@ To Execute code
 To Enter New Cell 
 - Shift + Enter 
 
-Congratulations! You have now set up your Deep Learning Environment!
+# Congratulations! You have now set up your Deep Learning Environment!
 
 We will begin by importing the mnist dataset from keras (https://keras.io/datasets/)
 - mnist = tf.keras.datasets.mnist  # 28x28 images of hand-written digits 0-9
@@ -104,7 +104,7 @@ Now that we have our Model Architecture Built, we will begin our Training Archit
 - model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))  # 128 is the number of neurons 
 - model.add(tf.keras.layers.Dense(10, activation=tf.nn.softmax))  # 10 is the number of classifications , Softmax = Probability
 - model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-- # These are the most basic criteria for compiling a model
+- These are the most basic criteria for compiling a model
 
 
 
