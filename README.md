@@ -61,8 +61,28 @@ To Enter New Cell
 
 Congratulations! You have now set up your Deep Learning Environment!
 
+We will begin by importing the mnist dataset from keras (https://keras.io/datasets/)
+- mnist = tf.keras.datasets.mnist  # 28x28 images of hand-written digits 0-9
+- (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
- 
+Our dataset can be examined using the matplotlib dependency
+- import matplotlib.pyplot as plt
+- print(x_train[0]) #(This function displays our tensor (feel free to change the digit to examine the data)) 
+
+We will use matplotlib to display our image data (feel free to change the digit to examine additional images)
+- plt.imshow(x_train[0], cmap = plt.cm.binary)  # cmap = color map , binary = black & white  
+- plt.show()
+- print(x_train[0])
+
+We will begin to Normalize our dataset using Keras 
+Adding to our code from above 
+"We will begin by importing the mnist dataset from keras (https://keras.io/datasets/)
+- mnist = tf.keras.datasets.mnist  # 28x28 images of hand-written digits 0-9
+- (x_train, y_train), (x_test, y_test) = mnist.load_data()"
+
+
+
+
 
 
 
