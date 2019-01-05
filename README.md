@@ -74,11 +74,16 @@ We will use matplotlib to display our image data (feel free to change the digit 
 - plt.show()
 - print(x_train[0])
 
-We will begin to Normalize our dataset using Keras 
-Adding to our code from above 
-"We will begin by importing the mnist dataset from keras (https://keras.io/datasets/)
+We will begin to Normalize our dataset using Keras: Adding to our code from above 
 - mnist = tf.keras.datasets.mnist  # 28x28 images of hand-written digits 0-9
-- (x_train, y_train), (x_test, y_test) = mnist.load_data()"
+- (x_train, y_train), (x_test, y_test) = mnist.load_data()
+- x_train = tf.keras.utils.normalize(x_train, axis=1)
+- x_test = tf.keras.utils.normalize(x_test, axis=1) # Be sure to Ctrl + Enter at every cell to commit code 
+
+Normalizing our data allows our pixel data to be displayed between 0-1 instead of 0-255 
+This allows our network to process our data much faster
+
+
 
 
 
