@@ -43,7 +43,7 @@ To Install Python Dependencies
 
 To Enable our Virtual Environment within Jupyter Notebook
 - pip install ipykernel
-- python -m ipkernel install --user --name=ProjectUno
+- python -m ipykernel install --user --name=ProjectUno
 
 Open Jupyter Notebook
 - Jupyter Notebook
